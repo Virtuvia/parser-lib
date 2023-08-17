@@ -67,7 +67,7 @@ abstract class AbstractParser
      *
      * @return mixed the value of the matched token
      */
-    protected function match($type)
+    protected function matchToken($type)
     {
         if ( ! $this->lexer->isNext($type)) {
             $this->syntaxError($this->lexer->getName($type));
